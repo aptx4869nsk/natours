@@ -22,13 +22,30 @@ STRIPE_PUBLISH_KEY=pk_test_51K8fbCG5WUUglpFc88AnQzpl854bPdfIVYNzyy7VDqUTqgdVqyoM
 ////////////////////////////////////////////////////////////////
 
 /////////////// Heroku ///////////////
+ <<<< double qoute🥰, single quote will get error 😂 >>>>
 www.heroku.com 
+https://dashboard.heroku.com/apps
 sign up and download heroku
 in cmd >>>>  heroku login 
 in project directory >>>> e.g. D:/Udemy/NodeJS/4-natours/heroku create
+Push to Heroku >>>> git push heroku master
+Open Heroku in Browser>>>>> heroku open
 See what's wrong >>>>> heroku logs --tail
 heroku config:set NODE_ENV=production
-heroku config:set DATABASE=mongodb+srv://nang:<PASSWORD>@cluster0.ndek5.mongodb.net/natours?retryWrites=true&w=majority
+heroku config:set DATABASE="mongodb+srv://nang:<PASSWORD>@cluster0.ndek5.mongodb.net/natours?retryWrites=true&w=majority"  
+heroku config:set DATABASE_PASSWORD=28IUJqVPpY6PWJcj
+heroku config:set JWT_SECRET=my-ultra-secure-with-32character
+heroku config:set JWT_EXPIRES_IN=90d
+heroku config:set JWT_COOKIE_EXPIRES_IN=1
+heroku config:set EMAIL_FROM=hello@himemiya.io
+heroku config:set STRIPE_SECRET_KEY="sk_test_51K8fbCG5WUUglpFcmmSufo65cmwd4DNqkFvvWWJdkXRIuj2oQXh6uaJwqZYh3kWi4DGzO72ngj1agNor5REjH0F400PAwazu5j"
+heroku config:set STRIPE_PUBLISH_KEY="pk_test_51K8fbCG5WUUglpFc88AnQzpl854bPdfIVYNzyy7VDqUTqgdVqyoM43SImRdLdunbWDptz3z8WbifWkdT1jkd3p8900iPhvmmKZ"
+heroku apps:rename natours-nsk
+
+/// Useful Link >>>>>>>>>>>>>>
+mailsac.com 
+https://www.giftofspeed.com/gzip-test/  >>>>>> Check for compression
+
 
 200 - success
 201 - create
@@ -37,14 +54,8 @@ heroku config:set DATABASE=mongodb+srv://nang:<PASSWORD>@cluster0.ndek5.mongodb.
 401 - unauthorize
 403 - forbidden  -- 禁止进入的
 
-/// 
-mailsac.com 
-
-//// tenporary
+//// html
 BEM architecture
-pk.eyJ1IjoiYXB0eDQ4Njluc2siLCJhIjoiY2t4MGQ1eGhoMDhnaDJzczZkdzk5OXV0bCJ9.rk_Aj-X0CNOJ3BF9JAZ-9g
-///
-
 
 ### Git ###
 git --version
