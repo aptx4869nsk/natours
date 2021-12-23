@@ -1,3 +1,4 @@
+const compression = require('compression');
 const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
@@ -91,6 +92,8 @@ app.use(
     ],
   })
 );
+
+app.use(compression());
 
 // Test middleware
 app.use((req, res, next) => {
