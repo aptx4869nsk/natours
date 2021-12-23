@@ -1,3 +1,5 @@
+*Don't forget to run "npm run build:js", "npm run watch:js"
+
 /////////////// Create config.env ///////////////
 NODE_ENV=development
 PORT=3000
@@ -51,8 +53,11 @@ heroku ps:restart --app=natours-nsk
 /////////// CORS cross-origin resource sharing /////////////////
 
 /// Useful Link >>>>>>>>>>>>>>
-mailsac.com 
+https://mailsac.com/
+https://mailtrap.io/
+https://stripe.com/
 https://www.giftofspeed.com/gzip-test/  >>>>>> Check for compression
+
 
 
 200 - success
