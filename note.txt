@@ -44,6 +44,8 @@ heroku config:set STRIPE_PUBLISH_KEY="pk_test_51K8fbCG5WUUglpFc88AnQzpl854bPdfIV
 heroku config:set STRIPE_WEBHOOK_SECRET=whsec_wzTD9i8T9ECBnUKdShE7yY6yJa8yIHAj
 heroku apps:rename natours-nsk
 To Test 'SIGTERM' on our app >>>> heroku ps >>> heroku ps:restart >>> heroku logs --tail
+heroku logs --app=natours-nsk --tail
+heroku ps:restart --app=natours-nsk
 
 
 /////////// CORS cross-origin resource sharing /////////////////
