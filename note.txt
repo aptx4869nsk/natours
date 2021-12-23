@@ -41,6 +41,10 @@ heroku config:set EMAIL_FROM=hello@himemiya.io
 heroku config:set STRIPE_SECRET_KEY="sk_test_51K8fbCG5WUUglpFcmmSufo65cmwd4DNqkFvvWWJdkXRIuj2oQXh6uaJwqZYh3kWi4DGzO72ngj1agNor5REjH0F400PAwazu5j"
 heroku config:set STRIPE_PUBLISH_KEY="pk_test_51K8fbCG5WUUglpFc88AnQzpl854bPdfIVYNzyy7VDqUTqgdVqyoM43SImRdLdunbWDptz3z8WbifWkdT1jkd3p8900iPhvmmKZ"
 heroku apps:rename natours-nsk
+To Test 'SIGTERM' on our app >>>> heroku ps >>> heroku ps:restart >>> heroku logs --tail
+
+
+/////////// CORS cross-origin resource sharing /////////////////
 
 /// Useful Link >>>>>>>>>>>>>>
 mailsac.com 
