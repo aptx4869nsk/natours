@@ -21,6 +21,12 @@ STRIPE_PUBLISH_KEY=pk_test_51K8fbCG5WUUglpFc88AnQzpl854bPdfIVYNzyy7VDqUTqgdVqyoM
 
 ////////////////////////////////////////////////////////////////
 
+/////////////// Heroku ///////////////
+www.heroku.com 
+sign up and download heroku
+in cmd >>>>  heroku login 
+in project directory >>>> e.g. D:/Udemy/NodeJS/4-natours/heroku create
+
 200 - success
 201 - create
 204 - delete  --- No Content
