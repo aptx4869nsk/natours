@@ -1,3 +1,26 @@
+/////////////// Create config.env ///////////////
+NODE_ENV=development
+PORT=3000
+DATABASE=mongodb+srv://nang:<PASSWORD>@cluster0.ndek5.mongodb.net/natours?retryWrites=true&w=majority
+DATABASE_LOCAL=mongodb://localhost:27017/natours
+DATABASE_PASSWORD=28IUJqVPpY6PWJcj
+
+JWT_SECRET=my-ultra-secure-with-32character
+JWT_EXPIRES_IN=90d
+JWT_COOKIE_EXPIRES_IN=1
+
+MAILTRAP_USERNAME=9068258ae574bb
+MAILTRAP_PASSWORD=8c1256762dcada
+MAILTRAP_HOST=smtp.mailtrap.io
+MAILTRAP_PORT=2525
+
+EMAIL_FROM=hello@nsk.io
+
+STRIPE_SECRET_KEY=sk_test_51K8fbCG5WUUglpFcmmSufo65cmwd4DNqkFvvWWJdkXRIuj2oQXh6uaJwqZYh3kWi4DGzO72ngj1agNor5REjH0F400PAwazu5j
+STRIPE_PUBLISH_KEY=pk_test_51K8fbCG5WUUglpFc88AnQzpl854bPdfIVYNzyy7VDqUTqgdVqyoM43SImRdLdunbWDptz3z8WbifWkdT1jkd3p8900iPhvmmKZ
+
+////////////////////////////////////////////////////////////////
+
 200 - success
 201 - create
 204 - delete  --- No Content
@@ -23,6 +46,9 @@ git init
 git add -A
 git status
 git commit -m "Initial Commit"
+>>>> Create a repository in your github account >>>>
+git remote add origin https://github.com/aptx4869nsk/natours.git
+git push origin master
 
 ####
 node ./dev-data/data/import-dev-data.js --import
@@ -86,4 +112,7 @@ npm install --g --production windows-build-tools    // install 'Vistual C++ buil
 npm config set msvs_version 2017 --global
 npm config list / npm config ls -l
 npm i -g ndb
+
+
+
 
