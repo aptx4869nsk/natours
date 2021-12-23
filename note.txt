@@ -26,6 +26,9 @@ www.heroku.com
 sign up and download heroku
 in cmd >>>>  heroku login 
 in project directory >>>> e.g. D:/Udemy/NodeJS/4-natours/heroku create
+See what's wrong >>>>> heroku logs --tail
+heroku config:set NODE_ENV=production
+heroku config:set DATABASE=mongodb+srv://nang:<PASSWORD>@cluster0.ndek5.mongodb.net/natours?retryWrites=true&w=majority
 
 200 - success
 201 - create
@@ -47,7 +50,6 @@ pk.eyJ1IjoiYXB0eDQ4Njluc2siLCJhIjoiY2t4MGQ1eGhoMDhnaDJzczZkdzk5OXV0bCJ9.rk_Aj-X0
 git --version
 git config --global user.name "aptx4869nsk"
 git config --global user.email "nangsanthinzarlwin@gmail.com"
-
 git init 
 git add -A
 git status

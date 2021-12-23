@@ -8,13 +8,29 @@ const Review = require('../../models/reviewModel');
 
 dotenv.config({ path: './config.env' });
 
+// MongoDB Atlas >>> https://cloud.mongodb.com
+const DB = process.env.DATABASE.replace(
+  '<PASSWORD>',
+  process.env.DATABASE_PASSWORD
+);
+
 mongoose
-  .connect(process.env.DATABASE_LOCAL, {
+  .connect(DB, {
     useNewUrlParser: true,
-    useUnifiedTopology: true,
     useCreateIndex: true,
+    useFindAndModify: false,
+    useUnifiedTopology: true,
   })
-  .then(() => console.log('DB Local Connection successful!'));
+  .then(() => console.log('DB connection successful!'));
+
+// Local MogoDB
+// mongoose
+//   .connect(process.env.DATABASE_LOCAL, {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//     useCreateIndex: true,
+//   })
+//   .then(() => console.log('DB Local Connection successful!'));
 
 // READ JSON FILE
 const tours = JSON.parse(fs.readFileSync(`${__dirname}/tours.json`, 'utf-8'));
