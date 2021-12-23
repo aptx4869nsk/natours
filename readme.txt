@@ -21,6 +21,8 @@ git config --global user.email "nangsanthinzarlwin@gmail.com"
 
 git init 
 git add -A
+git status
+git commit -m "Initial Commit"
 
 ####
 node ./dev-data/data/import-dev-data.js --import
